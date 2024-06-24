@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import { Button } from 'bits-ui';
 	import '../styles/app.scss';
 	import '../styles/global.scss';
@@ -17,22 +17,6 @@
 		<br/>
 		<Button.Root class="button type--primary size--sm">type--primary size--sm</Button.Root>
 		<Button.Root class="button type--primary size--sm" disabled>type--primary size--sm</Button.Root>
-		<br/>
-		<Button.Root class="button type--text size--sm">type--text size--sm</Button.Root>
-		<Button.Root class="button type--text size--sm" disabled>type--text size--sm</Button.Root>
-		<br/>
-		<Button.Root class="button type--secondary size--sm">type--secondary size--sm</Button.Root>
-		<Button.Root class="button type--secondary size--sm" disabled>type--secondary size--sm</Button.Root>
-		<br/>
-		<Button.Root class="button type--underline size--sm">type--underline size--sm</Button.Root>
-		<Button.Root class="button type--underline size--sm" disabled>type--underline size--sm</Button.Root>
-		<br/>
-		<Button.Root class="button type--secondary icon--md"><img src="../assets/svg/google.svg"></Button.Root>
-		<Button.Root class="button type--secondary icon--md" disabled><img src="../assets/svg/google.svg"></Button.Root>
-		<br/>
-		<Button.Root class="button type--primary icon--md"><img src="../assets/svg/bulb.svg"></Button.Root>
-		<Button.Root class="button type--primary icon--md" disabled><img src="../assets/svg/bulb.svg"></Button.Root>
-
 	</div>
 </section>
 

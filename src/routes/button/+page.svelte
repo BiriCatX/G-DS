@@ -1,10 +1,12 @@
-<script lang="ts">
+<script>
+	
 	import { Button } from 'bits-ui';
-	import '../../styles/app.scss';
+import '../../styles/app.scss';
 	import '../../styles/global.scss';
 </script>
 
 <section class="container">
+
 	<div class="main">
 		<Button.Root class="button type--primary size--md">type--primary size--md</Button.Root>
 		<Button.Root class="button type--primary size--md" disabled>type--primary size--md</Button.Root>

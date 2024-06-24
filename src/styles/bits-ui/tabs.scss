@@ -1,0 +1,32 @@
+@import '../main/theme.scss';
+@import '../main/sizes.scss';
+@import '../main/fonts.scss';
+
+.tabs__root {
+	padding: $padding--xl;
+	border: $border__size--md solid $theme__color--line;
+	border-radius: $radius--xl;
+}
+.tabs__list {
+  display: flex;
+  gap: $gap--sm;
+  border-bottom: $border__size--md solid $theme__color--line;
+}
+
+.tabs__trigger {
+  @extend %font__style__title--md;
+  color: $theme__color--text--primary;
+  background-color: transparent;
+  border: 0px solid;
+  padding: $padding--sm $padding--sm;
+
+  &[data-state="active"] {
+    color: $theme__color--primary;
+    border-bottom: $border__size--lg solid $theme__color--primary;
+  }
+}
+
+.tabs__content {
+  padding: $padding--md $padding--md;
+  @extend %font__style__body--lg;
+}

@@ -1,6 +1,6 @@
-@import 'theme.scss';
-@import 'sizes.scss';
-@import 'fonts.scss';
+@import '../main/theme.scss';
+@import '../main/sizes.scss';
+@import '../main/fonts.scss';
 
 .button {
 	display: flex;
@@ -25,54 +25,54 @@
 
 	//Primary Button
 	&.type--primary {
-		color: $baseline__color--text--primary;
-		background-color: $baseline__color--primary;
-		border: $baseline__border-size solid $baseline__color--primary;
+		color: $theme__color--text--primary;
+		background-color: $theme__color--primary;
+		border: $baseline__border-size solid $theme__color--primary;
 
 		&:disabled {
-			color: $baseline__color---text--secondary;
-			background-color: $baseline__color--surface--secondary;
-			border: $baseline__border-size solid $baseline__color--surface--secondary;
+			color: $theme__color---text--secondary;
+			background-color: $theme__color--surface--secondary;
+			border: $baseline__border-size solid $theme__color--surface--secondary;
 		}
 	}
 
 	//Secondary Button
 	&.type--secondary {
-		background-color: $baseline__color--surface--secondary;
-		color: $baseline__color--text--primary;
-		border: $baseline__border-size solid $baseline__color--line;
+		background-color: $theme__color--surface--secondary;
+		color: $theme__color--text--primary;
+		border: $baseline__border-size solid $theme__color--line;
 
 		&:disabled {
-			color: $baseline__color---text--secondary;
-			background-color: $baseline__color--surface--secondary;
-			border: $baseline__border-size solid $baseline__color--line;
+			color: $theme__color---text--secondary;
+			background-color: $theme__color--surface--secondary;
+			border: $baseline__border-size solid $theme__color--line;
 		}
 	}
 
 	//Text Button
 	&.type--text {
 		background-color: transparent;
-		color: $baseline__color--text--primary;
+		color: $theme__color--text--primary;
 		border: none;
 		border-radius: $radius--md;
 		min-width: auto;
 
 		&:disabled {
-			color: $baseline__color---text--secondary;
+			color: $theme__color---text--secondary;
 		}
 	}
 
 	//Text Button
 	&.type--underline {
 		background-color: transparent;
-		color: $baseline__color--text--primary;
+		color: $theme__color--text--primary;
 		text-decoration: underline;
 		border: none;
 		border-radius: $radius--md;
 		min-width: auto;
 
 		&:disabled {
-			color: $baseline__color---text--secondary;
+			color: $theme__color---text--secondary;
 		}
 	}
 
