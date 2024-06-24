@@ -1,0 +1,27 @@
+@import 'theme.scss';
+@import 'sizes.scss';
+@import 'fonts.scss';
+
+.textarea {
+    background-color: $baseline__color--surface--secondary;
+    color: $baseline__color--text--primary;
+    border: $baseline__border-size solid $baseline__color--line;
+    padding: $padding--md $padding--lg; 
+    border-radius: $radius--md;
+
+    @extend %font__style__body--lg;
+
+    &::placeholder {
+        color: $baseline__color---text--secondary;
+
+        @extend %font__style__body--md;
+    }
+
+    &:focus {
+        border-color: $baseline__color--primary;
+    }
+
+    &:focus-visible {
+        outline: $baseline__border-size solid  $baseline__color--primary;
+    }
+}

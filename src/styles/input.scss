@@ -1,0 +1,57 @@
+@import 'theme.scss';
+@import 'sizes.scss';
+@import 'fonts.scss';
+
+.input-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: $gap--xs;
+	color: $baseline__color--text--primary;
+
+	@extend %font__style__body--lg;
+
+	label {
+		margin-bottom: 0.5em;
+	}
+}
+
+.input {
+	background-color: $baseline__color--surface--secondary;
+	border: $baseline__border-size solid $baseline__color--line;
+	color: $baseline__color--text--primary;
+	padding: $padding--md $padding--lg; 
+	border-radius: $radius--md;
+
+	@extend %font__style__body--lg;
+
+	&:hover {
+		border-color: $baseline__color--primary;
+		transition: border-color 0.25s ease-in;
+	}
+
+	&::placeholder {
+		color: $baseline__color---text--secondary;
+		@extend %font__style__body--md;
+	}
+
+	&:focus {
+		border-color: $baseline__color--primary;
+	}
+
+	&:focus-visible {
+		outline: $baseline__border-size solid $baseline__color--primary;
+	}
+}
+
+.input__icon {
+	position: absolute;
+	right: $padding--lg;
+	top: 45%;
+	transform: translateY(50%);
+	width: $asset--md;
+	height: $asset--md;
+	pointer-events: none;
+	color: $baseline__color--text--primary;
+}
+

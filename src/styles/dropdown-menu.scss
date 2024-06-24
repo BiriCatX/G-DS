@@ -1,0 +1,109 @@
+@import '../styles/colors.scss';
+@import '../styles/fonts.scss';
+@import '../styles/sizes.scss';
+
+.dropdown {
+	display: flex;
+    cursor: pointer;
+	gap: $spacing-pico;
+	color: $text-primary;
+	align-items: center;
+	justify-content: center;
+	border-radius: $radius-regular;
+	padding: 4px $spacing-regular;
+	border: 1px solid $border;
+	background-color: $surface-alt;
+	@extend %font-s1-2;
+
+	&:hover {
+		filter: brightness(90%);
+	}
+
+	&:focus-visible {
+		outline: 2px solid $border;
+		outline-offset: 2px;
+	}
+
+	&:active {
+		transform: scale(0.98);
+	}
+
+	&.positive {
+		background-color: $emotion-positive;
+	}
+
+	&.negative {
+		background-color: $emotion-negative;
+	}
+
+	&.neutral {
+		background-color: $emotion-neutral;
+	}
+}
+
+.dropdown-content {
+	display: flex;
+	gap: $spacing-pico;
+	flex-direction: column;
+	color: $text-primary;
+    justify-content: flex-start;
+	max-width: 230px;
+	border-radius: $radius-nano;
+	border: 1px solid $border;
+	background-color: $surface-alt;
+	padding: $spacing-nano;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+	@extend %font-t2-1;
+}
+
+.seperator {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	margin-left: -0.25rem;
+	margin-right: -0.25rem;
+	display: block;
+	height: 1px;
+	background-color: $border;
+}
+
+.dropdown-menu {
+	cursor: pointer;
+	border-radius: 0.375rem;
+	padding: 4px 12px;
+	background-color: $surface-alt;
+
+	&.positive {
+		background-color: $emotion-positive;
+		border-radius: $radius-regular;
+		padding: 2px $spacing-micro;
+		margin: 2px 0px;
+		@extend %font-t2-2;
+	}
+
+    &.neutral {
+		background-color: $emotion-neutral;
+		border-radius: $radius-regular;
+		padding: 2px $spacing-micro;
+		margin: 2px 0px;
+		@extend %font-t2-2;
+	}
+
+    &.negative {
+		background-color: $emotion-negative;
+		border-radius: $radius-regular;
+		padding: 2px $spacing-micro;
+		margin: 2px 0px;
+		@extend %font-t2-2;
+	}
+
+	&:hover {
+		filter: brightness(90%);
+	}
+}
+
+.hover {
+    &:hover {
+		background-color: $surface-primary;
+	}
+}

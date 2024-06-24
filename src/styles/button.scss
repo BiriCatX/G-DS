@@ -1,0 +1,110 @@
+@import 'theme.scss';
+@import 'sizes.scss';
+@import 'fonts.scss';
+
+.button {
+	display: flex;
+	gap: $gap--xs;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	transition: filter 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+
+	&:hover {
+		filter: brightness(90%);
+		transition: 4px 0.25s linear;
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+
+		&:hover {
+			transform: none;
+		}
+	}
+
+	//Primary Button
+	&.type--primary {
+		color: $baseline__color--text--primary;
+		background-color: $baseline__color--primary;
+		border: $baseline__border-size solid $baseline__color--primary;
+
+		&:disabled {
+			color: $baseline__color---text--secondary;
+			background-color: $baseline__color--surface--secondary;
+			border: $baseline__border-size solid $baseline__color--surface--secondary;
+		}
+	}
+
+	//Secondary Button
+	&.type--secondary {
+		background-color: $baseline__color--surface--secondary;
+		color: $baseline__color--text--primary;
+		border: $baseline__border-size solid $baseline__color--line;
+
+		&:disabled {
+			color: $baseline__color---text--secondary;
+			background-color: $baseline__color--surface--secondary;
+			border: $baseline__border-size solid $baseline__color--line;
+		}
+	}
+
+	//Text Button
+	&.type--text {
+		background-color: transparent;
+		color: $baseline__color--text--primary;
+		border: none;
+		border-radius: $radius--md;
+		min-width: auto;
+
+		&:disabled {
+			color: $baseline__color---text--secondary;
+		}
+	}
+
+	//Text Button
+	&.type--underline {
+		background-color: transparent;
+		color: $baseline__color--text--primary;
+		text-decoration: underline;
+		border: none;
+		border-radius: $radius--md;
+		min-width: auto;
+
+		&:disabled {
+			color: $baseline__color---text--secondary;
+		}
+	}
+
+	//Medium Size Button
+	&.size--md {
+		padding: $padding--sm $padding--xl;
+		border-radius: $radius--md;
+		@extend %font__style__label--lg;
+	}
+
+	//Small Size Button
+	&.size--sm {
+		padding: $padding--xs $padding--lg;
+		border-radius: $radius--sm;
+		min-width: auto;
+		@extend %font__style__label--md;
+	}
+
+	//Icon Button
+	&.icon--sm {
+		width: auto;
+		border-radius: $radius--sm;
+		min-width: 0px;
+		padding: $padding--xs;
+	}
+
+	&.icon--md {
+		width: auto;
+		border-radius: $radius--md;
+		min-width: 0px;
+		padding: $padding--md;
+
+
+	}
+}

@@ -1,0 +1,22 @@
+@import 'theme.scss';
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: $baseline__color--surface--primary;
+	margin: 30px;
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	@media (max-width: 800px) {
+		scrollbar-width: none; 
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+}

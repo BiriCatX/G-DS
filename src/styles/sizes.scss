@@ -1,0 +1,44 @@
+@import './theme.scss';
+
+// gap
+$gap--xxs: $baseline__gap * 0.375; // 6px
+$gap--xs: $baseline__gap * 0.5; // 8px
+$gap--sm: $baseline__gap * 0.75; // 12px
+$gap--md: $baseline__gap; // 16px
+$gap--lg: $baseline__gap * 1.5; // 24px
+$gap--xl: $baseline__gap * 3; // 48px
+
+//padding
+$padding--xxs: $baseline__padding * 0.25; // 3px
+$padding--xs: $baseline__padding * 0.5; // 6px
+$padding--sm: $baseline__padding * 0.75; // 9px
+$padding--md: $baseline__padding; // 12px
+$padding--lg: $baseline__padding * 1.5; // 18px
+$padding--xl: $baseline__padding * 2; // 24px
+
+// icon, avatar
+$asset--xxs: $baseline__asset-size * 0.375;
+$asset--xs: $baseline__asset-size * 0.5; // 8px
+$asset--sm: $baseline__asset-size * 0.75; // 12px
+$asset--md: $baseline__asset-size; // 20px
+$asset--lg: $baseline__asset-size * 2.25; // 24px
+$asset--xl: $baseline__asset-size * 3; // 36px
+$asset--2xl: $baseline__asset-size * 3.5; // 48px
+
+// radius
+$radius--xxs: $baseline__radius * 0.25; //4px
+$radius--xs: $baseline__radius * 0.5; // 8px
+$radius--sm: $baseline__radius * 0.75; // 12px
+$radius--md: $baseline__radius; // 16px
+$radius--lg: $baseline__radius * 1.25; // 20px
+$radius--xl: $baseline__radius * 1.5; // 24px
+$radius--2xl: $baseline__radius * 2; // 32px
+
+//font-size
+$font__size--xxs: $baseline__font-size * 0.5; // 8px
+$font__size--xs: $baseline__font-size * 0.75; // 12px
+$font__size--sm: $baseline__font-size * 0.875; // 14px
+$font__size--md: $baseline__font-size; // 16px
+$font__size--lg: $baseline__font-size * 1.375; // 22px
+$font__size--xl: $baseline__font-size * 1.875; // 30px
+$font__size--2xl: $baseline__font-size * 2.5;

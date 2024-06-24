@@ -1,0 +1,40 @@
+@import 'theme.scss';
+@import 'sizes.scss';
+@import 'fonts.scss';
+
+.tabs-root {
+	width: 100%;
+	background-color: $baseline__color--surface--primary;
+}
+
+.tabs-list {
+	display: grid;
+    padding: $padding--sm;
+    background-color: $baseline__color--surface--secondary;
+	width: 96%;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: $gap--sm;
+	border-radius: $radius--md;
+	margin-bottom: 20px;
+}
+
+.dark .tabs-list {
+	border-width: 1px;
+	border-style: solid;
+	border-color: $baseline__color--line;
+	background-color: $baseline__color--surface--secondary;
+}
+
+.tabs-trigger {
+	@extend %font-t1-3;
+	color: $baseline__color--text--primary;
+	background-color: $baseline__color--surface--secondary;
+	border: 0px solid;
+	padding: $padding--sm;
+    border-radius: $radius--sm;
+
+	&[data-state='active'] {
+		background-color: $baseline__color--surface--secondary;
+        
+	}
+}
