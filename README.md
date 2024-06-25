@@ -30,7 +30,7 @@ The design system follows the BEM naming convention for css. Material Design Sys
 # Design Style Heirarchy
 All the design files are placed in the style folder. If you change the location, make sure to change the imports in the files.
 
-![design-system-heirarchy](https://github.com/alekois/catdogui/assets/92536005/9e5ccc5e-2ef7-4e08-a29b-a5f6304bab5f)
+![design-system-heirarchy](https://github.com/alekois/catdogui/assets/92536005/f72cb590-d49e-471d-94fb-3fd3dcc319c5)
 
 ## app.scss
 The file just contains all the imports from other scss files. You will just need to import app.scss in any svelte file for you to start using the styles.
