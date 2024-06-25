@@ -27,6 +27,8 @@ npm install bits-ui
 # Note
 The design system follows the BEM naming convention for css. Material Design System 3 heirarchy for colors and fonts.
 
+## Ultimately everyting below are just guidelines you do not need to strictly follow. 
+
 # Design Style Heirarchy
 All the design files are placed in the style folder. If you change the location, make sure to change the imports in the files.
 
