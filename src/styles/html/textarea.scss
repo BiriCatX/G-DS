@@ -1,27 +1,27 @@
-@import '../main/theme.scss';
-@import '../main/sizes.scss';
-@import '../main/fonts.scss';
+@import "../main/theme.scss";
+@import "../main/sizes.scss";
+@import "../main/fonts.scss";
 
 .textarea {
-    background-color: $theme__color--surface--secondary;
-    color: $theme__color--text--primary;
-    border: $border__size--md solid $theme__color--line;
-    padding: $padding--md $padding--lg; 
-    border-radius: $radius--md;
+  background-color: $theme__color--surface--secondary;
+  color: $theme__color--text--primary;
+  border: $border__size--md solid $theme__color--line;
+  padding: $padding--md $padding--lg;
+  border-radius: $radius--md;
 
-    @extend %font__style__body--lg;
+  @extend %font__style__body--lg;
 
-    &::placeholder {
-        color: $theme__color---text--secondary;
+  &::placeholder {
+    color: $theme__color--text--secondary;
 
-        @extend %font__style__body--md;
-    }
+    @extend %font__style__body--md;
+  }
 
-    &:focus {
-        border-color: $theme__color--primary;
-    }
+  &:focus {
+    border-color: $theme__color--primary;
+  }
 
-    &:focus-visible {
-        outline: $border__size--md solid  $theme__color--primary;
-    }
+  &:focus-visible {
+    outline: $border__size--md solid $theme__color--primary;
+  }
 }

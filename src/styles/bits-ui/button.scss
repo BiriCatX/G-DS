@@ -1,110 +1,150 @@
-@import '../main/theme.scss';
-@import '../main/sizes.scss';
-@import '../main/fonts.scss';
+@import "../main/theme.scss";
+@import "../main/sizes.scss";
+@import "../main/fonts.scss";
+@import "../main/colors.scss";
 
 .button {
-	display: flex;
-	gap: $gap--xs;
-	cursor: pointer;
-	align-items: center;
-	justify-content: center;
-	transition: filter 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+  display: flex;
+  gap: $gap--xs;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.4s cubic-bezier(0.1, 0, 0.3, 1);
 
-	&:hover {
-		filter: brightness(90%);
-		transition: 4px 0.25s linear;
-	}
+  &:hover {
+    filter: brightness(90%);
+    transition: 4px 0.25s linear;
+  }
 
-	&:disabled {
-		cursor: not-allowed;
+  &:disabled {
+    cursor: not-allowed;
 
-		&:hover {
-			transform: none;
-		}
-	}
+    &:hover {
+      transform: none;
+    }
+  }
 
-	//Primary Button
-	&.type--primary {
-		color: $theme__color--text--primary;
-		background-color: $theme__color--primary;
-		border: $baseline__border-size solid $theme__color--primary;
+  //Primary Button
+  &.type--primary {
+    background-color: $color__primary;
+    color: $color__on--primary;
+    border: $border__size--md solid $color__primary;
 
-		&:disabled {
-			color: $theme__color---text--secondary;
-			background-color: $theme__color--surface--secondary;
-			border: $baseline__border-size solid $theme__color--surface--secondary;
-		}
-	}
+    &:disabled {
+      background-color: rgba($color__primary, 0.2);
+      color: rgba($color__on--surface, 0.3);
+      border: $border__size--md solid rgba($color__primary, 0);
+    }
+  }
 
-	//Secondary Button
-	&.type--secondary {
-		background-color: $theme__color--surface--secondary;
-		color: $theme__color--text--primary;
-		border: $baseline__border-size solid $theme__color--line;
+  //Secondary Button
+  &.type--secondary {
+    background-color: $color__surface__container--low;
+    color: $color__on--surface;
+    border: $border__size--md solid $color__outline;
 
-		&:disabled {
-			color: $theme__color---text--secondary;
-			background-color: $theme__color--surface--secondary;
-			border: $baseline__border-size solid $theme__color--line;
-		}
-	}
+    &:disabled {
+      background-color: rgba($color__surface__container--low, 0.2);
+      color: rgba($color__on--surface, 0.3);
+      border: $border__size--md solid rgba($color__outline, 0.8);
+    }
+  }
 
-	//Text Button
-	&.type--text {
-		background-color: transparent;
-		color: $theme__color--text--primary;
-		border: none;
-		border-radius: $radius--md;
-		min-width: auto;
+  //Tertiary Button
+  &.type--tertiary {
+    background-color: $color__primary--60;
+    color: $color__on--primary--container;
+    border: $border__size--md solid $color__primary--container;
 
-		&:disabled {
-			color: $theme__color---text--secondary;
-		}
-	}
+    &:disabled {
+      background-color: rgba($color__primary--60, 0.3);
+      color: rgba($color__on--primary--container, 0.4);   
+      border: $border__size--md solid rgba($color__primary--container, 0);
+    }
+  }
 
-	//Text Button
-	&.type--underline {
-		background-color: transparent;
-		color: $theme__color--text--primary;
-		text-decoration: underline;
-		border: none;
-		border-radius: $radius--md;
-		min-width: auto;
+  //Text Button
+  &.type--text {
+    background-color: transparent;
+    color: $color__on--surface;
+    border: none;
+    border-radius: $radius--md;
+    min-width: auto;
 
-		&:disabled {
-			color: $theme__color---text--secondary;
-		}
-	}
+    &:disabled {
+      color: rgba($color__on--surface, 0.4);
+    }
+  }
 
-	//Medium Size Button
-	&.size--md {
-		padding: $padding--sm $padding--xl;
-		border-radius: $radius--md;
-		@extend %font__style__label--lg;
-	}
+  //Underline Button
+  &.type--underline {
+    background-color: transparent;
+    color: $color__on--surface;
+    text-decoration: underline;
+    border: none;
+    border-radius: $radius--md;
+    min-width: auto;
 
-	//Small Size Button
-	&.size--sm {
-		padding: $padding--xs $padding--lg;
-		border-radius: $radius--sm;
-		min-width: auto;
-		@extend %font__style__label--md;
-	}
+    &:disabled {
+      color: rgba($color__on--surface, 0.4);
+    }
+  }
 
-	//Icon Button
-	&.icon--sm {
-		width: auto;
-		border-radius: $radius--sm;
-		min-width: 0px;
-		padding: $padding--xs;
-	}
+  //Conformative Button
+  &.type--confirmative {
+    background-color: $color__confirmative;
+    color: $color__on--confirmative;
+    border: $border__size--md  solid rgba($color__confirmative, 1);
 
-	&.icon--md {
-		width: auto;
-		border-radius: $radius--md;
-		min-width: 0px;
-		padding: $padding--md;
+    &:disabled {
+      background-color: rgba($color__confirmative, 0.4);
+      color: rgba($color__on--confirmative, 0.3);
+      border: $border__size--md  solid rgba($color__confirmative, 0);
+    }
+  }
 
+  //Destructive Button
+  &.type--destructive {
+    background-color: $color__destructive;
+    color: $color__on--destructive;
+    border: $border__size--md solid $color__destructive;
 
-	}
+    &:disabled {
+      background-color: rgba($color__destructive, 0.3);
+      color: rgba($color__on--destructive, 0.3);
+      border: $border__size--md solid rgba($color__destructive, 0);
+    }
+  }
+
+  //Medium Size Button
+  &.size--md {
+    padding: $padding--sm $padding--xl;
+    border-radius: $radius--md;
+    @extend %font__style__label--lg;
+  }
+
+  //Small Size Button
+  &.size--sm {
+    padding: $padding--xs $padding--lg;
+    border-radius: $radius--sm;
+    min-width: auto;
+    @extend %font__style__label--md;
+  }
+
+  //Mediunm Icon Button
+  &.icon--md {
+    width: auto;
+    border-radius: $radius--md;
+    min-width: 0px;
+    padding: $padding--lg;
+	@extend %font__style__label--lg;
+  }
+
+  //Small Icon Button
+  &.icon--sm {
+    width: auto;
+    border-radius: $radius--sm;
+    min-width: 0px;
+    padding: $padding--sm;
+  }
 }

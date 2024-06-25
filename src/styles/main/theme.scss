@@ -1,24 +1,9 @@
 //font
 $theme__font-family--primary: "Source Code Pro", monospace;
-$theme__font-family--secondary: 'Merriweather', serif;
-
-//color
-$theme__color--primary: #FA7317;
-$theme__color--secondary: #db00ff;
-$theme__color--surface--primary: #09090B;
-$theme__color--surface--secondary: #110e0c;
-$theme__color--text--primary: #ffffff;
-$theme__color---text--secondary: #828596;
-$theme__color--text-tertiary: #a5a5a5;
-$theme__color--line: #292423;
-
-//system colors
-$theme__color--error: #dd0000;
-$theme__color--success: #00b012;
-$theme__color--warning: #ea9803;
+$theme__font-family--secondary: "Merriweather", serif; //add $theme__font-family--primary if you want to have only 1 font family
 
 //size
-$baseline__radius: 12px;
+$baseline__radius: 60px;
 $baseline__gap: 1rem; //16px
 $baseline__font-size: 1rem; //16px
 $baseline__asset-size: 1.25rem; //20px
@@ -27,3 +12,31 @@ $baseline__border-size: 1px;
 $baseline__line-height: 1.5;
 $baseline__font-weight: 500;
 
+//colors
+$theme__color--primary: #fa7317;
+$theme__color--secondary: #7317fa;
+$theme__color--neutral: #939190;
+$theme__color--destructive: #c72525;
+$theme__color--confirmative: #23a030;
+$theme__color--cautionary: #d1921c;
+
+
+
+
+
+
+//Depreciated
+$theme__color--surface--primary: #09090b;
+$theme__color--surface--secondary: #110e0c;
+$theme__color--text--primary: #ffffff;
+$theme__color--text--secondary: #828596;
+$theme__color--text--tertiary: #a5a5a5;
+$theme__color--line: #292423;
+
+$theme__color--primary--100: #ffffff;
+$theme__color--neutral--100: #09090b;
+
+$theme__color--neutral--50: #828596;
+$theme__color--neutral--30: #a5a5a5;
+$theme__color--neutral--20: #d6d6d6;
+$theme__color--neutral--0: #ffffff;

@@ -1,22 +1,22 @@
-@import './main/theme.scss';
+@import "./app.scss";
 
 
 body {
-	display: flex;
-	flex-direction: column;
-	background-color: $theme__color--surface--primary;
-	margin: 30px;
-	overflow-x: hidden;
-	overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: $color__surface__container--lowest;
+  margin: 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
 
-	@media (max-width: 800px) {
-		scrollbar-width: none; 
-		&::-webkit-scrollbar {
-			display: none;
-		}
-	}
+  @media (max-width: 800px) {
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }

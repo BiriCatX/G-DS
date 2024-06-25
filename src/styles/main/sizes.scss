@@ -48,6 +48,8 @@ $font__size--2xl: $baseline__font-size * 2.5;
 
 //border-size
 $border__size--none: 0px;
+$border__size--xs: $baseline__border-size * 0.25;
+$border__size--sm: $baseline__border-size * 0.5;
 $border__size--md: $baseline__border-size;
 $border__size--lg: $baseline__border-size * 2;
 $border__size--xl: $baseline__border-size * 3;

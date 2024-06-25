@@ -1,0 +1,196 @@
+@import "./theme.scss";
+
+//Don't change the order. It will break the functions.
+
+//Main color heirarchy at the end
+
+//Primary Color + Tones
+$color__primary: $theme__color--primary; //should be before function
+
+@function primary-color-tone($color__primary, $percentage) {
+  @if $percentage > 50 {
+    @return darken($color__primary, ($percentage - 50) * 1%);
+  } @else {
+    @return lighten($color__primary, (50 - $percentage) * 1%);
+  }
+}
+
+$color__primary--100: primary-color-tone($color__primary, 0);
+$color__primary--95: primary-color-tone($color__primary, 5);
+$color__primary--90: primary-color-tone($color__primary, 10);
+$color__primary--80: primary-color-tone($color__primary, 20);
+$color__primary--70: primary-color-tone($color__primary, 30);
+$color__primary--60: primary-color-tone($color__primary, 40);
+$color__primary--50: primary-color-tone($color__primary, 50);
+$color__primary--40: primary-color-tone($color__primary, 60);
+$color__primary--30: primary-color-tone($color__primary, 70);
+$color__primary--20: primary-color-tone($color__primary, 80);
+$color__primary--10: primary-color-tone($color__primary, 90);
+$color__primary--0: primary-color-tone($color__primary, 100);
+
+
+//Secondary Color + Tones
+$color__secondary: $theme__color--secondary; //should be before function
+
+@function secondary-color-tone($color__secondary, $percentage) {
+  @if $percentage > 50 {
+    @return darken($color__secondary, ($percentage - 50) * 1%);
+  } @else {
+    @return lighten($color__secondary, (50 - $percentage) * 1%);
+  }
+}
+
+$color__secondary--100: secondary-color-tone($color__secondary, 0);
+$color__secondary--95: secondary-color-tone($color__secondary, 5);
+$color__secondary--90: secondary-color-tone($color__secondary, 10);
+$color__secondary--80: secondary-color-tone($color__secondary, 20);
+$color__secondary--70: secondary-color-tone($color__secondary, 30);
+$color__secondary--60: secondary-color-tone($color__secondary, 40);
+$color__secondary--50: secondary-color-tone($color__secondary, 50);
+$color__secondary--40: secondary-color-tone($color__secondary, 60);
+$color__secondary--30: secondary-color-tone($color__secondary, 70);
+$color__secondary--20: secondary-color-tone($color__secondary, 80);
+$color__secondary--10: secondary-color-tone($color__secondary, 90);
+$color__secondary--0: secondary-color-tone($color__secondary, 100);
+
+
+//Neutral Color + Tones
+$color__neutral: $theme__color--neutral; //should be before function
+
+@function neutral-color-tone($color, $percentage) {
+  @if $percentage > 50 {
+    @return darken($color__neutral, ($percentage - 50) * 1%);
+  } @else {
+    @return lighten($color__neutral, (50 - $percentage) * 1%);
+  }
+}
+
+$color__neutral--100: neutral-color-tone($color__neutral, 0);
+$color__neutral--95: neutral-color-tone($color__neutral, 5);
+$color__neutral--90: neutral-color-tone($color__neutral, 10);
+$color__neutral--80: neutral-color-tone($color__neutral, 20);
+$color__neutral--70: neutral-color-tone($color__neutral, 30);
+$color__neutral--60: neutral-color-tone($color__neutral, 40);
+$color__neutral--50: neutral-color-tone($color__neutral, 50);
+$color__neutral--40: neutral-color-tone($color__neutral, 60);
+$color__neutral--30: neutral-color-tone($color__neutral, 70);
+$color__neutral--20: neutral-color-tone($color__neutral, 80);
+$color__neutral--10: neutral-color-tone($color__neutral, 90);
+$color__neutral--0: neutral-color-tone($color__neutral, 100);
+
+
+//Destructive color + Tones
+$color__destructive: $theme__color--destructive; //should be before function
+
+@function destructive-color-tone($color, $percentage) {
+  @if $percentage > 50 {
+    @return darken($color__destructive, ($percentage - 50) * 1%);
+  } @else {
+    @return lighten($color__destructive, (50 - $percentage) * 1%);
+  }
+}
+
+$color__destructive--100: destructive-color-tone($color__destructive, 0);
+$color__destructive--95: destructive-color-tone($color__destructive, 5);
+$color__destructive--90: destructive-color-tone($color__destructive, 10);
+$color__destructive--80: destructive-color-tone($color__destructive, 20);
+$color__destructive--70: destructive-color-tone($color__destructive, 30);
+$color__destructive--60: destructive-color-tone($color__destructive, 40);
+$color__destructive--50: destructive-color-tone($color__destructive, 50);
+$color__destructive--40: destructive-color-tone($color__destructive, 60);
+$color__destructive--30: destructive-color-tone($color__destructive, 70);
+$color__destructive--20: destructive-color-tone($color__destructive, 80);
+$color__destructive--10: destructive-color-tone($color__destructive, 90);
+$color__destructive--0: destructive-color-tone($color__destructive, 100);
+
+
+//Confirmative Color + Tones
+$color__confirmative: $theme__color--confirmative; //should be before function
+
+@function confirmative-color-tone($color, $percentage) {
+  @if $percentage > 50 {
+    @return darken($color, ($percentage - 50) * 1%);
+  } @else {
+    @return lighten($color, (50 - $percentage) * 1%);
+  }
+}
+
+$color__confirmative--100: confirmative-color-tone($color__confirmative, 0);
+$color__confirmative--95: confirmative-color-tone($color__confirmative, 5);
+$color__confirmative--90: confirmative-color-tone($color__confirmative, 10);
+$color__confirmative--80: confirmative-color-tone($color__confirmative, 20);
+$color__confirmative--70: confirmative-color-tone($color__confirmative, 30);
+$color__confirmative--60: confirmative-color-tone($color__confirmative, 40);
+$color__confirmative--50: confirmative-color-tone($color__confirmative, 50);
+$color__confirmative--40: confirmative-color-tone($color__confirmative, 60);
+$color__confirmative--30: confirmative-color-tone($color__confirmative, 70);
+$color__confirmative--20: confirmative-color-tone($color__confirmative, 80);
+$color__confirmative--10: confirmative-color-tone($color__confirmative, 90);
+$color__confirmative--0: confirmative-color-tone($color__confirmative, 100);
+
+
+//Cautionary Color + Tones
+$color__cautionary: $theme__color--cautionary; //should be before function
+
+@function cautionary-color-tone($color, $percentage) {
+  @if $percentage > 50 {
+    @return darken($color, ($percentage - 50) * 1%);
+  } @else {
+    @return lighten($color, (50 - $percentage) * 1%);
+  }
+}
+
+$color__cautionary--100: cautionary-color-tone($color__cautionary, 0);
+$color__cautionary--95: cautionary-color-tone($color__cautionary, 5);
+$color__cautionary--90: cautionary-color-tone($color__cautionary, 10);
+$color__cautionary--80: cautionary-color-tone($color__cautionary, 20);
+$color__cautionary--70: cautionary-color-tone($color__cautionary, 30);
+$color__cautionary--60: cautionary-color-tone($color__cautionary, 40);
+$color__cautionary--50: cautionary-color-tone($color__cautionary, 50);
+$color__cautionary--40: cautionary-color-tone($color__cautionary, 60);
+$color__cautionary--30: cautionary-color-tone($color__cautionary, 70);
+$color__cautionary--20: cautionary-color-tone($color__cautionary, 80);
+$color__cautionary--10: cautionary-color-tone($color__cautionary, 90);
+$color__cautionary--0: cautionary-color-tone($color__cautionary, 100);
+
+
+//Primary
+$color__on--primary: $color__primary--100;
+
+//Primary Container
+$color__primary--container: $color__primary--90;
+$color__on--primary--container: $color__primary--10;
+
+//Secondary
+$color__on--secondary: $color__secondary--100;
+
+//Surface Containers
+$color__surface__container--lowest: $color__neutral--100;
+$color__surface__container--low: $color__neutral--95;
+$color__surface__container: $color__neutral--90;
+$color__on--surface: $color__neutral--10;
+$color__on--surface--var: $color__neutral--30;
+
+//Others
+$color__outline: $color__neutral--50;
+$color__outline--var: $color__neutral--80;
+
+//Destructive
+$color__destructive: $theme__color--destructive;
+$color__on--destructive: $color__destructive--100;
+$color__destructive__container: $color__destructive--90;
+$color__destructive__on--container: $color__destructive--10;
+
+//Confirmative
+$color__confirmative: $theme__color--confirmative;
+$color__on--confirmative: $color__confirmative--100;
+
+//Cautionary
+$color__cautionary: $theme__color--cautionary;
+$color__on--cautionary: $color__cautionary--100;
+
+
+
+// .dark {
+//     --color__on--secondary: $color__secondary--100;
+// }

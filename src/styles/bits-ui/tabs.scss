@@ -1,11 +1,11 @@
-@import '../main/theme.scss';
-@import '../main/sizes.scss';
-@import '../main/fonts.scss';
+@import "../main/theme.scss";
+@import "../main/sizes.scss";
+@import "../main/fonts.scss";
 
 .tabs__root {
-	padding: $padding--xl;
-	border: $border__size--md solid $theme__color--line;
-	border-radius: $radius--xl;
+  padding: $padding--xl;
+  border: $border__size--md solid $theme__color--line;
+  border-radius: $radius--xl;
 }
 .tabs__list {
   display: flex;
