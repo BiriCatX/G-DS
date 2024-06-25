@@ -81,7 +81,7 @@ $tone__primary--100: primary-color-tone($color__primary, 0);
 ```
 Tones are generated using an scss function so you don't have to define them yourself. Tones are named begining with $tone__ and ending with 0, 10, 20...90, 95, 100 with 100 being the lightest and 0 being the darkest. 
 
-$tone_ variables also should NOT be used anywhere. 
+$tone_ variables should only be used to extend other variables. Do NOT use the raw variables in your projects. 
 
 Color Usage $color__ styles
 ```scss
