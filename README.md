@@ -29,7 +29,7 @@ The design system follows the BEM naming convention for css. Material Design Sys
 
 ## Ultimately everyting below are just guidelines you do not need to strictly follow. 
 
-# Design Style Heirarchy
+# Design System Heirarchy
 All the design files are placed in the style folder. If you change the location, make sure to change the imports in the files.
 
 ![design-system-heirarchy](https://github.com/alekois/catdogui/assets/92536005/19d1d17f-db62-407b-990d-267718b67046)
