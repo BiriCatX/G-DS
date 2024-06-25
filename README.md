@@ -100,6 +100,15 @@ The color system is using the Google Material 3 color system and naming conventi
 ## fonts.scss
 The font heirachy is also using the Google Material 3 convention. To use the font styles, use @extend %font-style__ 
 
+```scss
+%font-style__body--md {
+	font-family: $theme__font-family--primary;
+	font-size: $font__size--sm;
+	font-weight: $baseline__font-weight;
+	line-height: $baseline__line-height;
+}
+```
+
 ## sizes.scss
 The sizes are mathematically calculated using a baseline. The baseline are defined in the theme.scss so you don't need to edit anything here unless you want to change the modular scale.
 
