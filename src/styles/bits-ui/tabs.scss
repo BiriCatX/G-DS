@@ -14,7 +14,7 @@
 }
 
 .tabs__trigger {
-  @extend %font__style__title--md;
+  @extend %font-style__title--md;
   color: $theme__color--text--primary;
   background-color: transparent;
   border: 0px solid;
@@ -28,5 +28,5 @@
 
 .tabs__content {
   padding: $padding--md $padding--md;
-  @extend %font__style__body--lg;
+  @extend %font-style__body--lg;
 }

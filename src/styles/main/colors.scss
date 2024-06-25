@@ -15,18 +15,18 @@ $color__primary: $theme__color--primary; //should be before function
   }
 }
 
-$color__primary--100: primary-color-tone($color__primary, 0);
-$color__primary--95: primary-color-tone($color__primary, 5);
-$color__primary--90: primary-color-tone($color__primary, 10);
-$color__primary--80: primary-color-tone($color__primary, 20);
-$color__primary--70: primary-color-tone($color__primary, 30);
-$color__primary--60: primary-color-tone($color__primary, 40);
-$color__primary--50: primary-color-tone($color__primary, 50);
-$color__primary--40: primary-color-tone($color__primary, 60);
-$color__primary--30: primary-color-tone($color__primary, 70);
-$color__primary--20: primary-color-tone($color__primary, 80);
-$color__primary--10: primary-color-tone($color__primary, 90);
-$color__primary--0: primary-color-tone($color__primary, 100);
+$tone__primary--100: primary-color-tone($color__primary, 0);
+$tone__primary--95: primary-color-tone($color__primary, 5);
+$tone__primary--90: primary-color-tone($color__primary, 10);
+$tone__primary--80: primary-color-tone($color__primary, 20);
+$tone__primary--70: primary-color-tone($color__primary, 30);
+$tone__primary--60: primary-color-tone($color__primary, 40);
+$tone__primary--50: primary-color-tone($color__primary, 50);
+$tone__primary--40: primary-color-tone($color__primary, 60);
+$tone__primary--30: primary-color-tone($color__primary, 70);
+$tone__primary--20: primary-color-tone($color__primary, 80);
+$tone__primary--10: primary-color-tone($color__primary, 90);
+$tone__primary--0: primary-color-tone($color__primary, 100);
 
 
 //Secondary Color + Tones
@@ -155,11 +155,11 @@ $color__cautionary--0: cautionary-color-tone($color__cautionary, 100);
 
 
 //Primary
-$color__on--primary: $color__primary--100;
+$color__on--primary: $tone__primary--100;
 
 //Primary Container
-$color__primary--container: $color__primary--90;
-$color__on--primary--container: $color__primary--10;
+$color__primary--container: $tone__primary--90;
+$color__on--primary--container: $tone__primary--10;
 
 //Secondary
 $color__on--secondary: $color__secondary--100;

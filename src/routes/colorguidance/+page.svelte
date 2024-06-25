@@ -150,84 +150,84 @@
   .primary-tone-cell-0 {
     display: flex;
     width: 50px;
-    background-color: $color__primary--0;
+    background-color: $tone__primary--0;
   }
 
   .primary-tone-cell-10 {
     display: flex;
     width: 50px;
     height: 50px;
-    background-color: $color__primary--10;
+    background-color: $tone__primary--10;
   }
 
   .primary-tone-cell-20 {
     display: flex;
     width: 50px;
     height: 50px;
-    background-color: $color__primary--20;
+    background-color: $tone__primary--20;
   }
 
   .primary-tone-cell-30 {
     display: flex;
     width: 50px;
     height: 50px;
-    background-color: $color__primary--30;
+    background-color: $tone__primary--30;
   }
 
   .primary-tone-cell-40 {
     display: flex;
     width: 50px;
     height: 50px;
-    background-color: $color__primary--40;
+    background-color: $tone__primary--40;
   }
 
   .primary-tone-cell-50 {
     display: flex;
     width: 50px;
     height: 50px;
-    background-color: $color__primary--50;
+    background-color: $tone__primary--50;
   }
 
   .primary-tone-cell-60 {
     display: flex;
     width: 50px;
     height: 50px;
-    background-color: $color__primary--60;
+    background-color: $tone__primary--60;
   }
 
   .primary-tone-cell-70 {
     display: flex;
     width: 50px;
     height: 50px;
-    background-color: $color__primary--70;
+    background-color: $tone__primary--70;
   }
 
   .primary-tone-cell-80 {
     display: flex;
     width: 50px;
     height: 50px;
-    background-color: $color__primary--80;
+    background-color: $tone__primary--80;
   }
 
   .primary-tone-cell-90 {
     display: flex;
     width: 50px;
     height: 50px;
-    background-color: $color__primary--90;
+    background-color: $tone__primary--90;
   }
 
   .primary-tone-cell-95 {
     display: flex;
     width: 50px;
     height: 50px;
-    background-color: $color__primary--95;
+    background-color: $tone__primary--95;
   }
 
   .primary-tone-cell-100 {
     display: flex;
     width: 50px;
     height: 50px;
-    background-color: $color__primary--100;
+    background-color: $tone__primary--100;
   }
 
   .secondary-tone-cell-0 {

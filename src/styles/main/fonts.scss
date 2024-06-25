@@ -1,105 +1,105 @@
 @import 'theme.scss';
 @import 'sizes.scss';
 
-%font__style__display--lg {
+%font-style__display--lg {
 	font-family: $theme__font-family--secondary;
 	font-size: $font__size--2xl;
 	font-weight: $baseline__font-weight;
 	line-height: $baseline__line-height;
 }
 
-%font__style__display--md {
+%font-style__display--md {
 	font-family: $theme__font-family--secondary;
 	font-size: $font__size--xl;
 	font-weight: $baseline__font-weight + 200;
 	line-height: $baseline__line-height;
 }
 
-%font__style__display--sm {
+%font-style__display--sm {
 	font-family: $theme__font-family--secondary;
 	font-size: $font__size--lg;
 	font-weight: $baseline__font-weight + 100;
 	line-height: $baseline__line-height;
 }
 
-%font__style__headline--lg {
+%font-style__headline--lg {
 	font-family: $theme__font-family--secondary;
 	font-size: $font__size--xl;
 	font-weight: $baseline__font-weight;
 	line-height: $baseline__line-height;
 }
 
-%font__style__headline--md {
+%font-style__headline--md {
 	font-family: $theme__font-family--secondary;
 	font-size: $font__size--lg;
 	font-weight: $baseline__font-weight + 200;
 	line-height: $baseline__line-height;
 }
 
-%font__style__headline--sm {
+%font-style__headline--sm {
 	font-family: $theme__font-family--secondary;
 	font-size: $font__size--md;
 	font-weight: $baseline__font-weight + 200;
 	line-height: $baseline__line-height;
 }
 
-%font__style__title--lg {
+%font-style__title--lg {
 	font-family: $theme__font-family--primary;
 	font-size: $font__size--lg;
 	font-weight: $baseline__font-weight;
 	line-height: $baseline__line-height;
 }
 
-%font__style__title--md {
+%font-style__title--md {
 	font-family: $theme__font-family--primary;
 	font-size: $font__size--md;
 	font-weight: $baseline__font-weight + 100;
 	line-height: $baseline__line-height;
 }
 
-%font__style__title--sm {
+%font-style__title--sm {
 	font-family: $theme__font-family--primary;
 	font-size: $font__size--sm;
 	font-weight: $baseline__font-weight + 200;
 	line-height: $baseline__line-height;
 }
 
-%font__style__body--lg {
+%font-style__body--lg {
 	font-family: $theme__font-family--primary;
 	font-size: $font__size--md;
 	font-weight: $baseline__font-weight - 100;
 	line-height: $baseline__line-height;
 }
 
-%font__style__body--md {
+%font-style__body--md {
 	font-family: $theme__font-family--primary;
 	font-size: $font__size--sm;
 	font-weight: $baseline__font-weight;
 	line-height: $baseline__line-height;
 }
 
-%font__style__body--sm {
+%font-style__body--sm {
 	font-family: $theme__font-family--primary;
 	font-size: $font__size--xs;
 	font-weight: $baseline__font-weight;
 	line-height: $baseline__line-height;
 }
 
-%font__style__label--lg {
+%font-style__label--lg {
 	font-family: $theme__font-family--primary;
 	font-size: $font__size--md;
 	font-weight: $baseline__font-weight - 100;
 	line-height: $baseline__line-height;
 }
 
-%font__style__label--md {
+%font-style__label--md {
 	font-family: $theme__font-family--primary;
 	font-size: $font__size--sm;
 	font-weight: $baseline__font-weight - 100;
 	line-height: $baseline__line-height;
 }
 
-%font__style__label--sm {
+%font-style__label--sm {
 	font-family: $theme__font-family--primary;
 	font-size: $font__size--xxs;
 	font-weight: $baseline__font-weight;
