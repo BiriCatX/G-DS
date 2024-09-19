@@ -1,3 +1,32 @@
-.accordian {
+@import '../main/styles.scss';
+
+.accordian-root {
     width: 100% 
 }
+
+.accordian-item {
+    border-bottom: $border__size--md solid $color__outline;
+    padding: $padding--none $padding--md;
+}
+
+.accordian-trigger {
+    display: flex;
+    width: 100%;
+    padding: $padding--lg $padding--none;
+    transition: all 0.2s;
+    border: 0px;
+    background-color: transparent;
+    color : $color__on--surface;
+    @extend %font-style__title--lg;
+  }
+  
+  .accordian-trigger[data-state="open"] {
+    color : $color__primary;
+    padding-bottom: $padding--md;
+  }
+
+  .accordian-content {
+    padding-bottom: $padding--xl;
+    @extend %font-style__body--lg;
+  }
+  
