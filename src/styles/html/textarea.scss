@@ -1,25 +1,25 @@
 @import "../main/styles.scss";
 
 .textarea {
-  background-color: $theme__color--surface--secondary;
-  color: $theme__color--text--primary;
-  border: $border__size--md solid $theme__color--line;
+  background-color: $color__surface__container--lowest;
+  color: $color__on--surface;
+  border: $border__size--md solid $color__outline--var;
   padding: $padding--md $padding--lg;
-  border-radius: $radius--md;
+  border-radius: $radius--xxs;
 
   @extend %font-style__body--lg;
 
   &:placeholder {
-    color: $theme__color--text--secondary;
+    color: $color__on--surface--var;
 
     @extend %font-style__body--md;
   }
 
   &:focus {
-    border-color: $theme__color--primary;
+    border-color: $color__primary;
   }
 
   &:focus-visible {
-    outline: $border__size--md solid $theme__color--primary;
+    outline: $border__size--md solid $color__primary;
   }
 }

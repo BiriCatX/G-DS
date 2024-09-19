@@ -79,7 +79,7 @@
     color: $color__on--surface;
     text-decoration: underline;
     border: none;
-    border-radius: $radius--md;
+    border-radius: $radius--xxs;
     min-width: auto;
 
     &:disabled {
@@ -116,14 +116,14 @@
   //Medium Size Button
   &.size--md {
     padding: $padding--sm $padding--xl;
-    border-radius: $radius--md;
+    border-radius: $radius--xxs;
     @extend %font-style__label--lg;
   }
 
   //Small Size Button
   &.size--sm {
     padding: $padding--xs $padding--lg;
-    border-radius: $radius--sm;
+    border-radius: $radius--xxs;
     min-width: auto;
     @extend %font-style__label--md;
   }
@@ -131,7 +131,7 @@
   //Mediunm Icon Button
   &.icon--md {
     width: auto;
-    border-radius: $radius--md;
+    border-radius: $radius--xxs;
     min-width: 0px;
     padding: $padding--lg;
 	@extend %font-style__label--lg;
@@ -140,7 +140,7 @@
   //Small Icon Button
   &.icon--sm {
     width: auto;
-    border-radius: $radius--sm;
+    border-radius: $radius--xxs;
     min-width: 0px;
     padding: $padding--sm;
   }
