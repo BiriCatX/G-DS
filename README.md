@@ -1,6 +1,6 @@
 #G Design System 
 
-G DS is not a framework or a library. There is no packages to install and no dependancies. The goal is to give you the building blocks for the design system so you can start using it and not just own it but make it your own. 
+G DS - UI Design Language
 
 # Prerequisites
 
