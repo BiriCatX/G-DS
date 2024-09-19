@@ -11,7 +11,8 @@ export const nodes = [
 	() => import('./nodes/7'),
 	() => import('./nodes/8'),
 	() => import('./nodes/9'),
-	() => import('./nodes/10')
+	() => import('./nodes/10'),
+	() => import('./nodes/11')
 ];
 
 export const server_loads = [];
@@ -24,8 +25,9 @@ export const dictionary = {
 		"/checkbox": [6],
 		"/colorguidance": [7],
 		"/input": [8],
-		"/tabs": [9],
-		"/textarea": [10]
+		"/pagination": [9],
+		"/tabs": [10],
+		"/textarea": [11]
 	};
 
 export const hooks = {

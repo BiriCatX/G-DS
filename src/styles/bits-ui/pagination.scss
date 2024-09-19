@@ -1,0 +1,66 @@
+@import '../main/styles.scss';
+
+.pagination-arrow {
+    display: flex;
+    align-items: center;
+    gap: $gap--md;
+}
+
+.pagination-left {
+    display: flex;
+    width: 40px; 
+    height: 40px; 
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.pagination-page {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    border-radius: $radius--xs;
+    background-color: transparent;
+    color: $color__on--surface;
+    gap: $gap--md;
+    
+    @extend %font-style__body--lg;
+    
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    &:active {
+      transform: scale(0.98);
+    }
+    
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+      
+      &:hover {
+        background-color: transparent;
+      }
+    }
+    
+    &[data-selected] {
+      background-color: $color__primary;
+      color: $color__on--primary;
+      border-radius: $radius--xxs;
+    }
+  }
+
+  .pagination-number {
+    display: flex;
+    gap: $gap--md;
+  }
+
+  .pagination-range {
+    text-align: center;
+    font-size: 13px;
+    color: $color__on--surface;
+
+    @extend %font-style__label--sm ;
+  }
