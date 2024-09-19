@@ -1,6 +1,6 @@
 #G Design System 
 
-G DS - UI Design Language
+G - DS - UI Design Language
 
 # Prerequisites
 
@@ -14,7 +14,7 @@ npm install
 npm run dev
 ```
 
-CatDog DS is not affliated with bits-ui but it built on top of it so you need to install it first. Documentation for bits-ui at [`Bits-ui Documentaion`](https://www.bits-ui.com/docs/introduction).
+G - DS is not affliated with bits-ui but it built on top of it so you need to install it first. Documentation for bits-ui at [`Bits-ui Documentaion`](https://www.bits-ui.com/docs/introduction).
 
 To install bits-ui use the following command.
 
