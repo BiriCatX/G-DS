@@ -4,7 +4,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: $color__surface__container--lowest;
+  background-color: $color__surface__container; 
   margin: 30px;
   overflow-x: hidden;
   overflow-y: auto;

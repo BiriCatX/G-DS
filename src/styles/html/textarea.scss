@@ -1,6 +1,4 @@
-@import "../main/theme.scss";
-@import "../main/sizes.scss";
-@import "../main/fonts.scss";
+@import "../main/styles.scss";
 
 .textarea {
   background-color: $theme__color--surface--secondary;
@@ -11,7 +9,7 @@
 
   @extend %font-style__body--lg;
 
-  &::placeholder {
+  &:placeholder {
     color: $theme__color--text--secondary;
 
     @extend %font-style__body--md;

@@ -1,39 +1,73 @@
-<script>
-	import { Button } from 'bits-ui';
-	import '../styles/app.scss';
-	import '../styles/global.scss';
-</script>
+<script lang="ts">
+	import { Accordion } from "bits-ui";
+	import { slide } from "svelte/transition";
+   
+	const items = [
+	  {
+		title: "What is the meaning of life?",
+		content:
+		  "To become a better person, to help others, and to leave the world a better place than you found it."
+	  },
+	  {
+		title: "How do I become a better person?",
+		content:
+		  "Read books, listen to podcasts, and surround yourself with people who inspire you."
+	  },
+	  {
+		title: "What is the best way to help others?",
+		content: "Give them your time, attention, and love."
+	  }
+	];
+  </script>
+   
+ 
+  
 
-<section class="container">
+  <section class="container">
 	<div class="main">
-		<Button.Root class="button type--primary size--md">type--primary size--md</Button.Root>
-		<Button.Root class="button type--primary size--md" disabled>type--primary size--md</Button.Root>
-		<br/>
-		<Button.Root class="button type--text size--md">type--text size--md</Button.Root>
-		<Button.Root class="button type--text size--md" disabled>type--text size--md</Button.Root>
-		<br/>
-		<Button.Root class="button type--secondary size--md">type--secondary size--md </Button.Root>
-		<Button.Root class="button type--secondary size--md" disabled>type--secondary size--md</Button.Root>
-		<br/>
-		<Button.Root class="button type--primary size--sm">type--primary size--sm</Button.Root>
-		<Button.Root class="button type--primary size--sm" disabled>type--primary size--sm</Button.Root>
+        <Accordion.Root class="accordian" multiple>
+			{#each items as item, i}
+			  <Accordion.Item value="${i}" class="group border-b border-dark-10 px-1.5">
+				<Accordion.Header>
+				  <Accordion.Trigger
+					class="flex w-full flex-1 items-center justify-between py-5 text-[15px] font-medium transition-all [&[data-state=open]>span>svg]:rotate-180 "
+				  >
+					{item.title}
+					<span
+					  class="inline-flex size-8 items-center justify-center rounded-[7px] bg-transparent transition-all hover:bg-dark-10"
+					>
+					</span>
+				  </Accordion.Trigger>
+				</Accordion.Header>
+				<Accordion.Content
+				  transition={slide}
+				  transitionConfig={{ duration: 200 }}
+				  class="pb-[25px] text-sm tracking-[-0.01em]"
+				>
+				  {item.content}
+				</Accordion.Content>
+			  </Accordion.Item>
+			{/each}
+		  </Accordion.Root>
 	</div>
 </section>
 
-<style>
+<style lang="scss">
+
+	.accordian {
+		width: 100% 
+	}
+
 	.container {
 		display: flex;
 		justify-content: center;
-        padding: 30px;
+		padding: 30px;
 	}
 
-    
-
-    .main {
+	.main {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 		gap: 1.35em;
+		width: 800px;
 	}
 </style>

@@ -1,32 +1,31 @@
-@import "../main/theme.scss";
-@import "../main/sizes.scss";
-@import "../main/fonts.scss";
+@import "../main/styles.scss";
 
 .tabs__root {
   padding: $padding--xl;
-  border: $border__size--md solid $theme__color--line;
-  border-radius: $radius--xl;
+  border: $border__size--md solid $color__outline;
+  border-radius: $radius--sm;
 }
 .tabs__list {
   display: flex;
   gap: $gap--sm;
-  border-bottom: $border__size--md solid $theme__color--line;
+  border-bottom: $border__size--md solid $color__outline;
 }
 
 .tabs__trigger {
   @extend %font-style__title--md;
-  color: $theme__color--text--primary;
+  color: $color__neutral;
   background-color: transparent;
-  border: 0px solid;
+  border: $border__size--none solid;
   padding: $padding--sm $padding--sm;
 
   &[data-state="active"] {
-    color: $theme__color--primary;
-    border-bottom: $border__size--lg solid $theme__color--primary;
+    color: $color__primary;
+    border-bottom: $border__size--lg solid $color__primary;
   }
 }
 
 .tabs__content {
   padding: $padding--md $padding--md;
+  color: $color__on--surface;
   @extend %font-style__body--lg;
 }
