@@ -10,18 +10,16 @@
   background-color: rgba(0, 0, 0, 0.805);
 }
 
-
-
-.alert-content {
+.dialog-content {
     position: fixed;
     left: 50%;
     top: 50%;
     z-index: 50;
     display: grid;
-    width: 100%;
+    width: 290px;
     max-width: 94%;
     transform: translate(-50%, -50%);
-    gap: 1rem;
+    gap: $gap--md;
     border-radius: $radius--xs;
     background-color: $color__surface__container--lowest;
     padding: $padding--xl;
@@ -37,12 +35,17 @@
   }
   
 
-  .alert-title {
+  .dialog-title {
     @extend %font-style__title--lg;
     color: $color__on--surface;
   }
 
-  .alert-description {
+.dialog-seperator {
+    border: $border__size--xs solid $color__outline--var;
+    outline: none;
+}
+
+  .dialog-description {
     @extend %font-style__body--lg ;
     color: $color__on--surface;
   }

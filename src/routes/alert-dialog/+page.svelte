@@ -1,5 +1,4 @@
 <script lang="ts">
-  import "../../app.css";
   import "../../styles/app.scss";
   import "../../styles/global.scss";
   import { AlertDialog } from "bits-ui";
@@ -18,7 +17,7 @@
         <AlertDialog.Overlay
           transition={fade}
           transitionConfig={{ duration: 150 }}
-          class="fixed inset-0 z-50 bg-black/80"
+          class="overlay"
         />
         <AlertDialog.Content
           transition={flyAndScale}

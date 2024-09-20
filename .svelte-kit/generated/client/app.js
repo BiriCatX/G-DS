@@ -13,7 +13,8 @@ export const nodes = [
 	() => import('./nodes/9'),
 	() => import('./nodes/10'),
 	() => import('./nodes/11'),
-	() => import('./nodes/12')
+	() => import('./nodes/12'),
+	() => import('./nodes/13')
 ];
 
 export const server_loads = [];
@@ -25,11 +26,12 @@ export const dictionary = {
 		"/button": [5],
 		"/checkbox": [6],
 		"/colorguidance": [7],
-		"/input": [8],
-		"/pagination": [9],
-		"/select": [10],
-		"/tabs": [11],
-		"/textarea": [12]
+		"/dialog": [8],
+		"/input": [9],
+		"/pagination": [10],
+		"/select": [11],
+		"/tabs": [12],
+		"/textarea": [13]
 	};
 
 export const hooks = {

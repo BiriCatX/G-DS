@@ -18,7 +18,7 @@
               <div class="pagination-number">
                 {#each pages as page (page.key)}
                   {#if page.type === "ellipsis"}
-                    <div class="text-[15px] font-medium text-foreground-alt">...</div>
+                    <div class="ellipse">...</div>
                   {:else}
                     <Pagination.Page
                       {page}

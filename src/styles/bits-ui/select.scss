@@ -26,9 +26,9 @@
     border-radius: $radius--xxs; 
     border: $border__size--sm solid $color__outline--var;
     background-color: $color__surface__container--lowest;
-    padding: $padding--md;
+    padding: $padding--sm;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    gap: $gap--sm;
+    gap: $gap--xxs;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -36,3 +36,18 @@
     @extend %font-style__label--md;
 }
 
+
+.select-item {
+    display: flex;
+    width: 100%;
+    user-select: none;
+    align-items: center;
+    border-radius: $radius--xxs; 
+    padding: $padding--sm; 
+    outline: none;
+    transition: all 75ms;
+    
+    &[data-highlighted] {
+      background-color: $color__surface__container; 
+    }
+  }

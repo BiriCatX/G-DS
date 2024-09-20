@@ -15,6 +15,11 @@
     background-color: transparent;
 }
 
+.ellipse {
+    @extend %font-style__body--lg;
+    color: $color__on--surface;
+  }
+
 .pagination-page {
     display: flex;
     width: 32px;
@@ -59,8 +64,7 @@
 
   .pagination-range {
     text-align: center;
-    font-size: 13px;
     color: $color__on--surface;
 
-    @extend %font-style__label--sm ;
+    @extend %font-style__label--md  ;
   }

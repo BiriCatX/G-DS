@@ -1,5 +1,4 @@
 <script lang="ts">
-  import "../../app.css";
   import "../../styles/app.scss";
   import "../../styles/global.scss";
   import { Checkbox, Label } from "bits-ui";
