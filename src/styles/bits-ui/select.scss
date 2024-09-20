@@ -1,0 +1,38 @@
+@import '../main/styles.scss';
+
+.select-trigger {
+  display: flex;
+  min-width: 250px;
+  width: auto;
+  gap: $gap--sm;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: $radius--xxs;
+  border: $border__size--sm solid $color__outline--var;
+  background-color: $color__surface__container--lowest;
+  padding: $padding--sm;
+  transition: background-color 0.2s, border-color 0.2s;
+
+  @extend %font-style__label--md;
+
+  &::placeholder {
+    color: $color__on--surface--var;
+    opacity: 0.5;
+  }
+}
+
+.select-content {
+    width: 100%;
+    border-radius: $radius--xxs; 
+    border: $border__size--sm solid $color__outline--var;
+    background-color: $color__surface__container--lowest;
+    padding: $padding--md;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    gap: $gap--sm;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    @extend %font-style__label--md;
+}
+

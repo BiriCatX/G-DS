@@ -28,7 +28,7 @@
     transition: border-color 0.25s ease-in;
   }
 
-  &:placeholder {
+  &::placeholder {
     color: $color__on--surface--var;
     @extend %font-style__body--md;
   }

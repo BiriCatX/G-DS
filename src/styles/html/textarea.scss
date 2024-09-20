@@ -9,7 +9,7 @@
 
   @extend %font-style__body--lg;
 
-  &:placeholder {
+  &::placeholder {
     color: $color__on--surface--var;
 
     @extend %font-style__body--md;
