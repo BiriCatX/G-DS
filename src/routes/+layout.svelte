@@ -23,6 +23,7 @@
     <Button.Root class="button type--text size--sm" href="../radio-group">Radio Group</Button.Root>
     <Button.Root class="button type--text size--sm" href="../select">Select</Button.Root>
     <Button.Root class="button type--text size--sm" href="../sidebar">Sidebar</Button.Root>
+    <Button.Root class="button type--text size--sm" href="../switch">Switch</Button.Root>
     <Button.Root class="button type--text size--sm" href="../tabs">Tabs</Button.Root>
     <Button.Root class="button type--text size--sm" href="../textarea">Text Area</Button.Root>
   </nav>

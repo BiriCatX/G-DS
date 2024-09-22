@@ -4,7 +4,6 @@
 
   import { Dialog, Separator, Label } from "bits-ui";
   import { flyAndScale } from "$lib/utils";
-  import { X, LockOpen } from "lucide-svelte";
   import { fade } from "svelte/transition";
   import { Button } from "bits-ui";
 </script>

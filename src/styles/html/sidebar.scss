@@ -11,9 +11,13 @@
     align-items: flex-start;
     gap: $gap--xs;
     height: 100vh;
+    scroll-behavior: smooth;
     background-color: $color__primary--90;
     color: $color__on--surface;
-  }
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
 
 .heading {
   @extend %font-style__title--md;

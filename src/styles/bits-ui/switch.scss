@@ -1,0 +1,66 @@
+@import '../main/styles.scss';
+
+.switch-root {
+    display: inline-flex;
+    height: 36px;
+    min-height: 36px;
+    width: 60px;
+    flex-shrink: 0;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 1000px;
+    padding: 0 3px;
+  
+    &:focus-visible {
+      outline: none;
+    }
+  
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  
+    &[data-state="checked"] {
+      background-color: $color__primary--100;
+      border: $border__size--lg solid $color__outline;
+    }
+  
+    &[data-state="unchecked"] {
+        background-color: $color__primary--100;
+        border: $border__size--lg solid $color__outline;
+    }
+  }
+
+  .switch-thumb {
+    pointer-events: none;
+    display: block;
+    width: 29px;
+    height: 29px;
+    flex-shrink: 0;
+    border-radius: 9999px;
+    background-color: $color__on--surface--var; 
+    transition: transform 0.2s ease-in-out;
+  
+    &[data-state="checked"] {
+        background-color: $color__primary; 
+      transform: translateX(24px); 
+    }
+  
+    &[data-state="unchecked"] {
+      transform: translateX(0);
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); 
+    }
+
+  }
+
+  .switch-label {
+    color: $color__on--surface;
+    @extend %font-style__body--lg;
+  }
+
+  .switch-container {
+    display: flex;
+    gap: $gap--md;
+    justify-content: center;
+    align-items: center;
+  }
