@@ -16,15 +16,13 @@
     top: 50%;
     z-index: 50;
     display: grid;
-    width: 290px;
+    width: max-content;
     max-width: 94%;
     transform: translate(-50%, -50%);
     gap: $gap--md;
     border-radius: $radius--xs;
     background-color: $color__surface__container--lowest;
     padding: $padding--xl;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);  /* Approximating shadow-popover */
-    outline: none;
   }
 
   .alert-details {
@@ -33,7 +31,17 @@
     gap: $gap--sm;
     padding-bottom: $padding--sm;
   }
+
+  .dialog-close {
+    position: fixed;
+    right: 24;
+    top: 24;
+  }
   
+  .dialog-trigger {
+    border: 0px;
+    padding: 0px;
+  }
 
   .dialog-title {
     @extend %font-style__title--lg;
@@ -48,6 +56,7 @@
   .dialog-description {
     @extend %font-style__body--lg ;
     color: $color__on--surface;
+    max-width: 600px;
   }
   
   @media (min-width: 640px) {

@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
   border-radius: $radius--xxs;
-  border: $border__size--sm solid $color__outline--var;
+  border: $border__size--sm solid $color__outline;
   background-color: $color__surface__container--lowest;
   padding: $padding--sm;
   transition: background-color 0.2s, border-color 0.2s;
@@ -48,6 +48,6 @@
     transition: all 75ms;
     
     &[data-highlighted] {
-      background-color: $color__surface__container; 
+      background-color: $color__primary--90; 
     }
   }

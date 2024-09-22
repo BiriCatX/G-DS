@@ -1,0 +1,36 @@
+.radio-root {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .label-root {
+    @extend %font-style__label--lg;
+  }
+
+  .radio-group {
+    display: flex;
+    gap: $gap--xs;
+    user-select: none;
+    align-items: center;
+    color: $color__on--surface;
+  }
+
+  .radio-item {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+    cursor: default;
+    border-radius: 9999px;
+    border-width: $border__size--sm;
+    border-color: $color__outline;
+  }
+
+  .radio-item:hover {
+    border-color: $color__primary;
+  }
+
+  .radio-item[data-state="checked"] {
+    border-width: 0.375rem;
+    border-color: $color__primary;
+  }

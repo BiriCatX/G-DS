@@ -5,7 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: $color__surface__container; 
-  margin: 30px;
+  margin: 0px;
   overflow-x: hidden;
   overflow-y: auto;
 
@@ -34,4 +34,19 @@ a {
   height:24px;
   display: flex;
   color: $color__on--surface;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  width: 1400px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.35em;
 }

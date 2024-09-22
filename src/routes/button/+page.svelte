@@ -91,20 +91,3 @@
     >
   </div>
 </section>
-
-<style lang="scss">
-
-  .container {
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-  }
-
-  .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.35em;
-  }
-</style>

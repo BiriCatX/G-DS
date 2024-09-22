@@ -1,16 +1,15 @@
 <script lang="ts">
   import "../../styles/app.scss";
   import "../../styles/global.scss";
-  import { AlertDialog } from "bits-ui";
+  import { AlertDialog, Button } from "bits-ui";
   import { flyAndScale } from "$lib/utils.js";
-  import { Button } from "bits-ui";
   import { fade } from "svelte/transition";
 </script>
 
 <div class="container">
   <div class="main">
     <AlertDialog.Root>
-      <AlertDialog.Trigger>
+      <AlertDialog.Trigger class="alert-dialog-trigger">
         <Button.Root class="button type--primary size--md">Alert</Button.Root>
       </AlertDialog.Trigger>
       <AlertDialog.Portal>
@@ -27,18 +26,18 @@
             <AlertDialog.Title class="alert-title"
               >Confirm your transaction</AlertDialog.Title
             >
-            <AlertDialog.Description class="text-sm text-foreground-alt">
+            <AlertDialog.Description class="alert-description">
               This action cannot be undone. This will initiate a monthly wire in
               the amount of $10,000 to Huntabyte. Do you wish to continue?
             </AlertDialog.Description>
           </div>
           <div class="alert-action-container">
-            <AlertDialog.Cancel
+            <AlertDialog.Cancel class="alert-dialog-trigger "
               ><Button.Root class="button type--destructive size--md"
                 >Cancel</Button.Root
               ></AlertDialog.Cancel
             >
-            <AlertDialog.Action
+            <AlertDialog.Action class="alert-dialog-trigger"
               ><Button.Root class="button type--confirmative size--md"
                 >Continue</Button.Root
               ></AlertDialog.Action

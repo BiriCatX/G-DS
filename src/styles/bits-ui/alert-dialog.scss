@@ -36,6 +36,10 @@
     padding-bottom: $padding--sm;
   }
   
+  .alert-dialog-trigger {
+    border: 0px;
+    padding: 0px;
+  }
 
   .alert-title {
     @extend %font-style__title--lg;
@@ -64,5 +68,9 @@
     width: 100%;
     justify-content: flex-end;
     gap: $gap--md;
+  }
+
+  h2 {
+    margin: 0px;
   }
   
