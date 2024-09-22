@@ -80,7 +80,7 @@ You should use **$color__primary** when you want to use your brand primary color
 Programatically generated tones
 ```scss
 //tone
-$tone__primary--100: primary-color-tone($color__primary, 0);
+$color__primary--100: primary-color-tone($color__primary, 0);
 ```
 Tones are generated using an scss function so you don't have to define them yourself. Tones are named begining with $tone__ and ending with 0, 10, 20...90, 95, 100 with 100 being the lightest and 0 being the darkest. 
 

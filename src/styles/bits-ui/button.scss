@@ -9,7 +9,6 @@
   transition: filter 0.4s cubic-bezier(0.1, 0, 0.3, 1);
 
   &:hover {
-    filter: brightness(90%);
     transition: 4px 0.25s linear;
   }
 
@@ -27,10 +26,14 @@
     color: $color__on--primary;
     border: $border__size--md solid $color__primary;
 
+    &:hover {
+      background-color: $color__primary--40;
+    }
+
     &:disabled {
-      background-color: rgba($color__primary, 0.2);
-      color: rgba($color__on--surface, 0.3);
-      border: $border__size--md solid rgba($color__primary, 0);
+      background-color: $color__primary--80;
+      color: $color__primary--70;
+      border: $border__size--md solid $color__primary--80;
     }
   }
 
@@ -39,6 +42,10 @@
     background-color: $color__surface__container--low;
     color: $color__on--surface;
     border: $border__size--md solid $color__outline;
+
+    &:hover {
+      background-color: $color__primary--80;
+    }
 
     &:disabled {
       background-color: rgba($color__surface__container--low, 0.2);
@@ -49,12 +56,16 @@
 
   //Tertiary Button
   &.type--tertiary {
-    background-color: $tone__primary--60;
+    background-color: $color__primary--60;
     color: $color__on--primary--container;
     border: $border__size--md solid $color__primary--container;
 
+    &:hover {
+      background-color: $color__primary--70;
+    }
+
     &:disabled {
-      background-color: rgba($tone__primary--60, 0.3);
+      background-color: rgba($color__primary--60, 0.3);
       color: rgba($color__on--primary--container, 0.4);   
       border: $border__size--md solid rgba($color__primary--container, 0);
     }
@@ -68,8 +79,13 @@
     border-radius: $radius--md;
     min-width: auto;
 
+    &:hover {
+      background-color: $color__primary--90;
+    }
+
     &:disabled {
       color: rgba($color__on--surface, 0.4);
+      background-color: transparent;
     }
   }
 
@@ -82,8 +98,13 @@
     border-radius: $radius--xxs;
     min-width: auto;
 
+    &:hover {
+      background-color: $color__primary--90;
+    }
+
     &:disabled {
       color: rgba($color__on--surface, 0.4);
+      background-color: transparent;
     }
   }
 
@@ -91,12 +112,12 @@
   &.type--confirmative {
     background-color: $color__confirmative;
     color: $color__on--confirmative;
-    border: $border__size--md  solid rgba($color__confirmative, 1);
+    border: $border__size--md  solid $color__confirmative;;
 
     &:disabled {
-      background-color: rgba($color__confirmative, 0.4);
-      color: rgba($color__on--confirmative, 0.3);
-      border: $border__size--md  solid rgba($color__confirmative, 0);
+      background-color: $color__confirmative--90;
+      color: $color__confirmative--70;
+      border: $border__size--md  solid $color__confirmative--90;
     }
   }
 
@@ -107,9 +128,9 @@
     border: $border__size--md solid $color__destructive;
 
     &:disabled {
-      background-color: rgba($color__destructive, 0.3);
-      color: rgba($color__on--destructive, 0.3);
-      border: $border__size--md solid rgba($color__destructive, 0);
+      background-color: $color__destructive--90;
+      color: $color__destructive--80;
+      border: $border__size--md solid $color__destructive--90;
     }
   }
 

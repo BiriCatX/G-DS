@@ -4,6 +4,7 @@
   padding: $padding--xl;
   border: $border__size--md solid $color__outline;
   border-radius: $radius--sm;
+  height: -webkit-fill-available;
 }
 .tabs__list {
   display: flex;
