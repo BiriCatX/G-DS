@@ -21,11 +21,12 @@
 
 .heading {
   @extend %font-style__title--md;
+  color: $color__on--surface;
   padding: $padding--xs $padding--lg;
 }
 
 .sub-heading {
   @extend %font-style__title--sm;
-  color: $color__primary;
+  color: $color__primary--40;
   padding: $padding--xs $padding--lg;
 }

@@ -17,7 +17,7 @@
     border: 0px;
     background-color: transparent;
     color : $color__on--surface;
-    @extend %font-style__title--lg;
+    @extend %font-style__title--md;
   }
   
   .accordian-trigger[data-state="open"] {

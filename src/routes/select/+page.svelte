@@ -1,5 +1,4 @@
 <script lang="ts">
-  import "../../app.css";
   import "../../styles/app.scss";
   import "../../styles/global.scss";
 
@@ -23,7 +22,7 @@
         aria-label="Select a theme"
       >
         <Palette class="lucide-16"/>
-        <Select.Value class="text-sm" placeholder="Select a theme" />
+        <Select.Value class="select-value" placeholder="Select a theme" />
         <ChevronsDownUp class="lucide-16" />
       </Select.Trigger>
       <Select.Content
@@ -38,7 +37,7 @@
             label={theme.label}
           >
             {theme.label}
-            <Select.ItemIndicator class="ml-auto" asChild={false}>
+            <Select.ItemIndicator class="select-itemindicator" asChild={false}>
               <Check class="lucide-16"/>
             </Select.ItemIndicator>
           </Select.Item>

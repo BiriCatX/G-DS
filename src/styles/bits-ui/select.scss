@@ -27,7 +27,6 @@
     border: $border__size--sm solid $color__outline--var;
     background-color: $color__surface__container--lowest;
     padding: $padding--sm;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     gap: $gap--xxs;
     display: flex;
     flex-direction: column;
@@ -39,7 +38,6 @@
 
 .select-item {
     display: flex;
-    width: 100%;
     user-select: none;
     align-items: center;
     border-radius: $radius--xxs; 
@@ -51,3 +49,12 @@
       background-color: $color__primary--90; 
     }
   }
+
+  .select-value {
+    font-size: 14px; 
+  }
+
+  .select-itemindicator {
+    margin-left: auto;
+  }
+  
