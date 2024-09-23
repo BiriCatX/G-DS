@@ -21,7 +21,9 @@ export const nodes = [
 	() => import('./nodes/17'),
 	() => import('./nodes/18'),
 	() => import('./nodes/19'),
-	() => import('./nodes/20')
+	() => import('./nodes/20'),
+	() => import('./nodes/21'),
+	() => import('./nodes/22')
 ];
 
 export const server_loads = [];
@@ -37,15 +39,17 @@ export const dictionary = {
 		"/checkbox": [9],
 		"/colorguidance": [10],
 		"/dialog": [11],
-		"/input": [12],
-		"/pagination": [13],
-		"/radio-group": [14],
-		"/range-calendar": [15],
-		"/select": [16],
-		"/sidebar": [17],
-		"/switch": [18],
-		"/tabs": [19],
-		"/textarea": [20]
+		"/dropdown": [12],
+		"/input": [13],
+		"/menubar": [14],
+		"/pagination": [15],
+		"/radio-group": [16],
+		"/range-calendar": [17],
+		"/select": [18],
+		"/sidebar": [19],
+		"/switch": [20],
+		"/tabs": [21],
+		"/textarea": [22]
 	};
 
 export const hooks = {

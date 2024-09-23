@@ -7,11 +7,7 @@
 <section class="container">
   <div class="main">
     <div class="input__container">
-      Your email<img
-        class="input__icon"
-        src="../assets/svg/bulb.svg"
-        alt=""
-      /><input
+      Your email<input
         class="input"
         type="email"
         id="fname"

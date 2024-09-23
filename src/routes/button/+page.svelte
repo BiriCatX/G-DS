@@ -7,73 +7,73 @@
 <section class="container">
   <div class="main">
     <Button.Root class="button type--primary size--md"
-      >type--primary size--md</Button.Root
+      >Primary Button</Button.Root
     >
     <Button.Root class="button type--primary size--md" disabled
-      >type--primary size--md</Button.Root
+      >Primary Disabled</Button.Root
     >
     <br />
     <Button.Root class="button type--confirmative size--md"
-      >type--primary size--md</Button.Root
+      >Confirmative</Button.Root
     >
     <Button.Root class="button type--confirmative size--md" disabled
-      >type--primary size--md</Button.Root
+      >Confimative Disabled</Button.Root
     >
     <br />
     <Button.Root class="button type--destructive size--md"
-      >type--primary size--md</Button.Root
+      >Destructive</Button.Root
     >
     <Button.Root class="button type--destructive size--md" disabled
-      >type--primary size--md</Button.Root
+      >Destructive Disabled</Button.Root
     >
     <br />
     <Button.Root class="button type--text size--md"
-      >type--text size--md</Button.Root
+      >Text Button</Button.Root
     >
     <Button.Root class="button type--text size--md" disabled
-      >type--text size--md</Button.Root
+      >Text Disabled</Button.Root
     >
     <br />
     <Button.Root class="button type--secondary size--md"
-      >type--secondary size--md
+      >Secondary Button
     </Button.Root>
     <Button.Root class="button type--secondary size--md" disabled
-      >type--secondary size--md</Button.Root
+      >Secondary Disabled</Button.Root
     >
     <br />
     <Button.Root class="button type--tertiary size--md"
-      >type--primary size--md</Button.Root
+      >Tertiary Button</Button.Root
     >
     <Button.Root class="button type--tertiary size--md" disabled
-      >type--primary size--md</Button.Root
+      >Tertiary Disabled</Button.Root
     >
     <br />
     <Button.Root class="button type--primary size--sm"
-      >type--primary size--sm</Button.Root
+      >Primary Small</Button.Root
     >
     <Button.Root class="button type--primary size--sm" disabled
-      >type--primary size--sm</Button.Root
+      >Primary S Disabled</Button.Root
     >
     <br />
     <Button.Root class="button type--text size--sm"
-      >type--text size--sm</Button.Root
+      >Text Small</Button.Root
     >
     <Button.Root class="button type--text size--sm" disabled
-      >type--text size--sm</Button.Root
+      >Text S Disabled</Button.Root
     >
     <br />
     <Button.Root class="button type--secondary size--sm"
-      >type--secondary size--sm</Button.Root
+      >Secondary Small</Button.Root
     >
     <Button.Root class="button type--secondary size--sm" disabled
-      >type--secondary size--sm</Button.Root
+      >Secondary S Disabled</Button.Root
     >
     <br />
     <Button.Root class="button type--underline size--sm"
-      >type--underline size--sm</Button.Root
+      >Underlined Small</Button.Root
     >
     <Button.Root class="button type--underline size--sm" disabled
-      >type--underline size--sm</Button.Root
+      >Underlined S Disabled</Button.Root
     >
     <br />
     <Button.Root class="button type--secondary icon--md"

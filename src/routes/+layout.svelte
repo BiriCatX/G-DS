@@ -21,6 +21,7 @@
     <Button.Root class="button type--text size--sm" href="../calendar">Calendar</Button.Root>
     <Button.Root class="button type--text size--sm" href="../checkbox">Checkbox</Button.Root>
     <Button.Root class="button type--text size--sm" href="../dialog">Dialog</Button.Root>
+    <Button.Root class="button type--text size--sm" href="../dropdown">Dropdown</Button.Root>
     <Button.Root class="button type--text size--sm" href="../input">Input</Button.Root>
     <Button.Root class="button type--text size--sm" href="../pagination">Pagination</Button.Root>
     <Button.Root class="button type--text size--sm" href="../radio-group">Radio Group</Button.Root>

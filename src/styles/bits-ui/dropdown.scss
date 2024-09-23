@@ -1,0 +1,102 @@
+@import '../main/styles.scss';
+
+.dropdown-trigger {
+    display: inline-flex;
+    height: 2.5rem; 
+    width: 2.5rem; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px; 
+    border: 1px solid black;
+    font-size: 0.875rem; 
+    font-weight: 500; 
+  
+    &:hover {
+      background-color: $color__primary--100;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  .dropdown-context {
+    width: 100%;
+    max-width: 230px;
+    border-radius: $radius--xxs;
+    border: $border__size--md solid $color__outline--var;
+    background-color: $color__surface__container;
+    padding: $padding--md;
+    color: $color__on--surface;
+  }
+
+  .dropdown-item {
+    display: flex;
+    height: 2.5rem;
+    user-select: none;
+    align-items: center;
+    border-radius: $radius--xxs;
+    outline: none;
+    padding: $padding--none $padding--xs;
+
+    @extend %font-style__body--lg; 
+  
+    &[data-highlighted] {
+      background-color: $color__primary--90;
+    }
+  }
+
+  .dropdown-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $gap--xs;
+  }
+
+  .dropdown-separator {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+    display: block;
+    height: 1px;
+    border: $border__size--md solid $color__outline--var;
+  }
+
+  .dropdown-sub-trigger {
+    display: flex;
+    height: 2.5rem;
+    user-select: none;
+    align-items: center;
+    border-radius: $radius--xxs;
+    outline: none;
+    padding: $padding--none $padding--xs;
+
+    @extend %font-style__body--lg; 
+  
+    &[data-highlighted],
+    &[data-state="open"] {
+      background-color: $color__primary--90;
+    }
+  }
+
+  .dropdown-chevron {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+  }
+
+  .dropdown-subcontent {
+    margin-left: $gap--sm;
+    display: flex;
+    flex-direction: column;
+    gap: $gap--xxs;
+    width: 100%;
+    max-width: 209px;
+    border-radius: 0.75rem;
+    border: $border__size--md solid $color__outline--var;
+    background-color: $color__surface__container;
+    padding: $padding--md;
+    outline: none;
+  }
