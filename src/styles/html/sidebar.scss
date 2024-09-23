@@ -12,7 +12,7 @@
     gap: $gap--xs;
     height: 100vh;
     scroll-behavior: smooth;
-    background-color: $color__primary--90;
+    background-color: $color__primary--95;
     color: $color__on--surface;
     overflow-y: auto;
     overflow-x: hidden;
@@ -26,5 +26,6 @@
 
 .sub-heading {
   @extend %font-style__title--sm;
+  color: $color__primary;
   padding: $padding--xs $padding--lg;
 }

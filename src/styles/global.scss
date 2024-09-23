@@ -1,4 +1,5 @@
 @import "./app.scss";
+@import '../styles/main/styles.scss';
 
 
 body {
@@ -49,4 +50,10 @@ a {
   justify-content: center;
   align-items: center;
   gap: 1.35em;
+}
+
+.nodesign {
+  font-size: 18px;
+  color: $color__on--surface;
+  @extend %font-style__body--lg;
 }
