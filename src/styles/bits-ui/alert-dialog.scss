@@ -1,4 +1,4 @@
-@import '../main/styles.scss';
+@import "../main/styles.scss";
 
 .overlay {
   position: fixed;
@@ -10,67 +10,66 @@
   background-color: rgba(0, 0, 0, 0.805);
 }
 
-
-
 .alert-content {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    z-index: 50;
-    display: grid;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 50;
+  display: grid;
+  width: 100%;
+  max-width: 94%;
+  transform: translate(-50%, -50%);
+  gap: 1rem;
+  border-radius: $radius--xs;
+  background-color: $color__surface__container--lowest;
+  padding: $padding--xl;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Approximating shadow-popover */
+  outline: none;
+}
+
+.alert-details {
+  display: flex;
+  flex-direction: column;
+  gap: $gap--sm;
+  padding-bottom: $padding--sm;
+}
+
+.alert-dialog-trigger {
+  border: 0px;
+  padding: 0px;
+}
+
+.alert-title {
+  @extend %font-style__title--lg;
+  color: $color__on--surface;
+}
+
+.alert-description {
+  @extend %font-style__body--lg;
+  color: $color__on--surface;
+}
+
+@media (min-width: 640px) {
+  .alert-content {
+    max-width: 32rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .alert-content {
     width: 100%;
-    max-width: 94%;
-    transform: translate(-50%, -50%);
-    gap: 1rem;
-    border-radius: $radius--xs;
-    background-color: $color__surface__container--lowest;
-    padding: $padding--xl;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);  /* Approximating shadow-popover */
-    outline: none;
   }
-
-  .alert-details {
-    display: flex;
-    flex-direction: column;
-    gap: $gap--sm;
-    padding-bottom: $padding--sm;
-  }
-  
-  .alert-dialog-trigger {
-    border: 0px;
-    padding: 0px;
-  }
-
-  .alert-title {
-    @extend %font-style__title--lg;
-    color: $color__on--surface;
-  }
-
-  .alert-description {
-    @extend %font-style__body--lg ;
-    color: $color__on--surface;
-  }
-  
-  @media (min-width: 640px) {
-    .alert-content {
-      max-width: 32rem;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .alert-content {
-      width: 100%; 
-    }
-  }
+}
 
 .alert-action-container {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    gap: $gap--md;
-  }
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: $gap--md;
+}
 
-  h2 {
-    margin: 0px;
-  }
-  
+h2 {
+  margin: 0px;
+}

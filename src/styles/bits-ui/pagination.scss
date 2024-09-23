@@ -1,70 +1,87 @@
-@import '../main/styles.scss';
+@import "../main/styles.scss";
 
 .pagination-arrow {
-    display: flex;
-    align-items: center;
-    gap: $gap--md;
+  display: flex;
+  align-items: center;
+  gap: $gap--md;
+  border: none;
+  outline: none;
 }
 
-.pagination-left {
-    display: flex;
-    width: 40px; 
-    height: 40px; 
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
+.pagination-button {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    border: none;
+  }
+
+  &[data-pagination-prev-button],
+  &[data-pagination-next-button] {
+    border: none;
+  }
 }
 
 .ellipse {
-    @extend %font-style__body--lg;
-    color: $color__on--surface;
-  }
+  @extend %font-style__body--lg;
+  color: $color__on--surface;
+}
 
 .pagination-page {
-    display: flex;
-    width: 32px;
-    height: 32px;
-    align-items: center;
-    justify-content: center;
-    border-radius: $radius--xs;
-    background-color: transparent;
-    color: $color__on--surface;
-    gap: $gap--md;
-    
-    @extend %font-style__body--lg;
-    
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: $radius--xs;
+  background-color: transparent;
+  color: $color__on--surface;
+  gap: $gap--md;
+
+  @extend %font-style__body--lg;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
     &:hover {
-      background-color: rgba(0, 0, 0, 0.1);
-    }
-    
-    &:active {
-      transform: scale(0.98);
-    }
-    
-    &:disabled {
-      cursor: not-allowed;
-      opacity: 0.5;
-      
-      &:hover {
-        background-color: transparent;
-      }
-    }
-    
-    &[data-selected] {
-      background-color: $color__primary;
-      color: $color__on--primary;
-      border-radius: $radius--xxs;
+      background-color: transparent;
     }
   }
 
-  .pagination-number {
-    display: flex;
-    gap: $gap--md;
+  &[data-selected] {
+    background-color: $color__primary;
+    color: $color__on--primary;
+    border-radius: $radius--xxs;
   }
 
-  .pagination-range {
-    text-align: center;
-    color: $color__on--surface;
-
-    @extend %font-style__label--md  ;
+  &[data-pagination-page] {
+    border: none;
   }
+}
+
+.pagination-number {
+  display: flex;
+  gap: $gap--md;
+}
+
+.pagination-range {
+  text-align: center;
+  color: $color__on--surface;
+
+  @extend %font-style__label--md;
+}

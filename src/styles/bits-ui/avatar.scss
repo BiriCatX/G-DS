@@ -1,0 +1,28 @@
+@import "../main/styles.scss";
+
+.avatar-root {
+  height: 3rem;
+  width: 3rem;
+  background-color: $color__primary;
+  color: $color__on--primary;
+  text-transform: uppercase;
+  border-radius: 9999px;
+
+  &[data-loading-status="loaded"] {
+    border-color: #000000;
+  }
+
+  &:not([data-loading-status="loaded"]) {
+    border-color: transparent;
+  }
+
+  .avatar-inner {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 9999px;
+  }
+}

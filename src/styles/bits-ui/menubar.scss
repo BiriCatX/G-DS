@@ -1,0 +1,60 @@
+@import "../main/styles.scss";
+
+.menubar-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap--lg;
+  padding: $padding--sm $padding--xl;
+  background-color: $color__surface__container;
+}
+
+.menubar-trigger {
+    display: inline-flex;
+    cursor: default;
+    align-items: center;
+    justify-content: center;
+    padding: $padding--xxs;
+    outline: none;
+    box-shadow: none !important;
+    border: none;
+
+    @extend %font-style__body--lg;
+
+  
+    &[data-highlighted] {
+      color: $color__primary;
+    }
+  
+    &[data-state="open"] {
+      color: $color__primary;
+    }
+  }
+
+  .menubar-content {
+    z-index: 50;
+    width: 100%;
+    max-width: 16rem;
+    border-radius: $radius--xxs;
+    background-color: $color__surface__container;
+    border: $border__size--md solid $color__outline--var;
+    padding: $padding--lg;
+    outline: none;
+  }
+
+  .menubar-item, .menubar-subtrigger {
+    display: flex;
+    user-select: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: $padding--md;
+    border-radius: $radius--xxs;
+    outline: none;
+
+    @extend %font-style__body--lg;
+    
+    &[data-highlighted],
+    &[data-state="open"] {
+      background-color: $color__primary--90;
+    }
+  }
